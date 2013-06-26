@@ -1,0 +1,17 @@
+*.aux
+*.bbl
+*.blg
+*.cls
+*.dvi
+*.log
+*.out
+*.pdf
+*.toc
+*.ps
+*.tmp
+*.TODO
+*.inx
+*.vtc
+*.nav
+*.snm
+*.rel

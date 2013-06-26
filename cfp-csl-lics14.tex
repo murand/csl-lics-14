@@ -1,0 +1,384 @@
+\documentclass[oneside]{article}
+\usepackage[letterpaper,margin={12mm,9mm}]{geometry}
+\usepackage{times,courier}
+\usepackage{xcolor}
+\colorlet{hrefcolor}{blue!30!white}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=false,
+  urlbordercolor=hrefcolor,
+  pdfborderstyle={/S/U/W 1},
+}
+\usepackage{microtype}
+
+\parindent 0pt
+\parskip 0pt
+
+\begin{document}
+
+\pagestyle{empty}
+\raggedbottom
+
+\newbox\nbox
+\newcommand\titlestyle{\large\bfseries}
+
+\begin{center}
+  \textbf{(First) CALL FOR PAPERS} \\[1ex]
+  {\large JOINT MEETING OF} \\[1ex]
+  \setbox\nbox=\hbox{\titlestyle COMPUTER SCIENCE LOGIC (CSL)}
+  \begin{minipage}[b]{\wd\nbox} \centering
+    the Twenty-Third EACSL Annual Conference on \\[.2ex]
+    {\box\nbox}
+  \end{minipage}
+  \ {\titlestyle\ \&\ }
+  \setbox\nbox=\hbox{\titlestyle LOGIC IN COMPUTER SCIENCE (LICS)}
+  \begin{minipage}[b]{\wd\nbox} \centering
+    the Twenty-Ninth Annual ACM/IEEE Symposium on \\[.2ex]
+    {\box\nbox}
+  \end{minipage}
+  \\[1ex]
+  July 14--18, 2014, Vienna, Austria \\[1ex]
+  {\bfseries \url{http://vsl2014.at/csl-lics/}
+             \quad
+             \url{http://lii.rwth-aachen.de/lics/csl-lics14/}
+  }
+\end{center}
+
+\vspace{1mm}
+
+\newdimen\leftcol
+\leftcol=4.7cm
+\newdimen\rightcol
+\rightcol=\linewidth
+\advance\rightcol by -\leftcol
+\advance\rightcol by -1.5em
+\let\oldframebox=\framebox
+\let\framebox=\relax
+
+%%% TODO uncomment the following two lines to display sizing boxes
+% \fboxsep 0pt
+% \let\framebox=\oldframebox
+
+\framebox{
+\begin{minipage}[t]{\leftcol}
+  % \linespread{1.07}
+  \parskip .4ex
+  \small
+  \textbf{Program Chairs:} \\[.4ex]
+  Thomas Henzinger, \emph{IST Austria}\\
+%\\  \href{mailto:tah@ist.ac.at?subject=CSL/LICS+2014}
+%         {\ttfamily tah@ist.ac.at} \\[.4ex]
+  Dale Miller, \emph{INRIA \& LIX}
+% \\  \href{mailto:dale.miller@inria.fr?subject=CSL/LICS+2014}
+%          {\ttfamily dale.miller@inria.fr}
+
+  \vspace{.5em}
+
+  \textbf{Program Committee:} \\[.4ex]
+  A.\ Asperti, \emph{U. Bologna} \\
+  G.\ Barthe, \emph{IMDEA} \\
+  A.\ Bauer, \emph{IMFM} \\
+  L.\ Birkedal, \emph{Aarhus U.} \\
+  K.\ Chatterjee, \emph{IST Austria} \\
+  A.\ Compagnoni, \emph{Stevens Inst. of Tech.} \\
+  V.\ De Paiva, \emph{Nuance Communications} \\
+  L.\ Doyen, \emph{ENS Cachan} \\
+  J.\ Duparc, \emph{U. Lausanne} \\
+  M.\ Fernandez, \emph{King's College London} \\
+  H.\ Geuvers, \emph{Radboud U. Nijmegen} \\
+  D.\ Ghica, \emph{U. Birmingham} \\
+  E.\ Gr\"adel, \emph{RWTH Aachen U.} \\
+  H.\ Hermanns, \emph{Saarland U.} \\
+  N.\ Immerman, \emph{U. Mass. Amherst} \\
+  N.\ Kobayashi, \emph{U. Tokyo} \\
+  L.\ Kovacs, \emph{Chalmers U.} \\
+  V.\ Kuncak, \emph{EPFL} \\
+  S.\ La Torre, \emph{U. Salerno} \\
+  R.\ Majumdar, \emph{MPI-SWS} \\
+  D.\ Mazza, \emph{CNRS \& U. Paris-Nord} \\
+  J.\ Ouaknine, \emph{U. Oxford} \\
+  L.\ Pacholski, \emph{U. Wroclaw} \\
+  N.\ Piterman, \emph{U. Leicester} \\
+  A.\ Pitts, \emph{U. Cambridge} \\
+  A.\ Podelski, \emph{U. Freiburg} \\
+  R.\ Ramanujam, \emph{IMS Chennai} \\
+  J.\ Riely, \emph{DePaul U.} \\
+  S.\ Ronchi Della Rocca, \emph{U. Torino} \\
+  A.\ Sabry, \emph{Indiana U.} \\
+  T.\ Schrijvers, \emph{Ghent U.} \\
+  P.\ S.\ Thiagarajan, \emph{Nat. U. Singapore} \\
+  A.\ Tiu, \emph{Australian Nat. U.} \\
+  V.\ Vianu, \emph{U. California San Diego} \\
+  A.\ Voronkov, \emph{U. Manchester} \\
+  I.\ Walukiewicz, \emph{CNRS \& U. Bordeaux}
+
+  \vspace{.5em}
+
+  \textbf{Workshop Chairs:} \\[.4ex]
+  Patricia Bouyer-Decitre, \emph{CNRS} \\
+  Georg Moser, \emph{U.\ Innsbruck}
+%\\   \href{mailto:georg.moser@uibk.ac.at?subject=CSL/LICS+2014}
+%    {\ttfamily georg.moser@uibk.ac.at}
+
+  \vspace{.5em}
+
+  \textbf{Local Organization Committee:}\\[.4ex]
+  K.\ Chatterjee and J. Otop, \emph{IST Austria}
+
+  \vspace{.5em}
+
+  \textbf{Publicity Chairs:}\\[.4ex]
+  K.\ Chaudhuri, % \emph{INRIA \& LIX}\\
+  A.\ Murawski% , \emph{U. Warwick}
+
+  \vspace{.5em}
+
+  \textbf{FLoC Organization Committee:} \\[.4ex]
+  M. Baaz, S. Szeider, M. Vardi,\\ H. Veith
+
+%\vspace{.5em}
+
+%  \textbf{Important Dates:} \\[.4ex]
+%    \begin{tabular}[c]{rl@{\ }r@{,\ }l}
+%      Title \& abstracts due: & Jan & 13 & 2014 \\
+%      Full paper due:         & Jan & 20 & 2014 \\
+%      Author notification:    & Mar & 31 & 2014 \\
+%      Final versions due:     & May & 15 & 2014
+%    \end{tabular}
+
+  %%%% EDNOTE KC omitted for space: organizing committee, steering committe
+\end{minipage}}
+\hfill
+%%% TODO KC remove framebox
+\framebox{
+\begin{minipage}[t]{\rightcol}
+  \parindent 1.4em
+
+  \noindent%
+  CSL is the annual meeting of the \href{http://eacsl.org}{European Association
+  for Computer Science Logic (EACSL)} intended for computer scientists whose
+  research activities involve logic, as well as for logicians working on issues
+  significant for computer science.
+  %
+  LICS is an annual international forum on theoretical and
+  practical topics in computer science that relate to logic.
+  %
+  The organizers of these two series of meetings have chosen to join the
+  2014 editions of these meetings into a single event within the Federated Logic
+  Conference (FLoC) that will be part of the \href{http://vsl2014.at}{Vienna
+  Summer of Logic 2014}.
+  %
+  Thus, in 2014, these meetings will have one program committee, one program,
+  and one proceedings.  No decision has been made to hold CSL and LICS jointly
+  beyond 2014.
+
+  We invite submissions on topics that fit the themes of both conferences.
+  %
+  These topics include:
+  %
+  % written this way so you can run `sort-lines' on the region
+automata theory;
+automated deduction;
+categorical models and logics;
+constraints programming;
+constructive mathematics;
+database theory;
+decision procedures;
+domain theory;
+finite model theory;
+formal languages;
+formal methods in software engineering;
+foundations of computability;
+functional and reactive synthesis;
+game semantics;
+graph games;
+higher-order logic;
+lambda and combinatory calculi;
+linear logic;
+logic programming;
+logics for AI;
+logics of programs;
+logical aspects of computational complexity;
+modal and temporal logics;
+model checking;
+program analysis;
+proof theory;
+semantics of programming languages;
+specification and verification of hardware, software, and complex systems;
+term rewriting; and
+type theory.
+Also welcome are papers describing models and logics for biological systems;
+concurrent, distributed, and mobile computation;
+quantum computation;
+security; and
+real-time, probabilistic, and hybrid systems.
+
+  \medskip
+
+  \noindent%
+  \textbf{Submission:} %
+  Authors are required to submit a paper title and a short abstract of about 100
+  words in advance of submitting the full paper.
+  %
+  Every full paper must be submitted in the {IEEE} Proceedings 2-column
+  10-point format and may not be longer than 10 pages, including references.
+  ({\LaTeX} style files are available on the conference web-site.)
+  %
+  The full paper must be in English and provide sufficient detail to
+  allow the program committee to assess its merits.
+%
+  Full proofs may appear in a technical appendix which will be read at the
+  reviewers' discretion.
+%
+  Authors are strongly encouraged to include a well written introduction which
+  is directed at all members of the program committee.
+%
+  Paper selection will be merit-based, with no \emph{a priori} limit on the number
+  of accepted papers.
+  %
+%  It should begin with a succinct statement of the issues, a summary of the main
+%  results, and a brief explanation of their significance and the relevance to
+%  the conference and to computer science, all phrased for the non-specialist.
+  %
+%  Technical development directed to the specialist should follow.
+  %
+%  References and comparisons with related work must be included.
+  %
+%  If necessary, detailed proofs of technical results may be included in a
+%  clearly labeled appendix, to be consulted at the discretion of program
+%  committee members.
+  %
+%  full papers not conforming to the above requirements will be rejected
+%  without further consideration.
+%
+   Papers authored or co-authored by members of the program committee are not
+   allowed.
+
+   \medskip
+
+   \noindent%
+   \textbf{Important Dates:}
+% Authors are required to submit a paper title and a
+% short abstract of about 100 words in advance of submitting the full paper of
+% the paper.
+The exact deadline time on these dates is given by
+   \href{http://www.ieee802.org/16/aoe.html}{AoE} (``anywhere on earth'').
+  %
+  \begin{center}
+    \hspace{-8em} \small
+    \begin{tabular}[c]{rr@{\ }r@{,\ }l}
+      \textbf{Title \& Short Abstracts Due:}
+      & January & 13 & 2014 \\
+      \textbf{Full Papers Due:}
+      & January & 20 & 2014 \\
+      \textbf{Author Notification:}
+      & March   & 31 & 2014 \\
+      \textbf{Final Versions Due for Proceedings:}
+      & May     & 15 & 2014
+    \end{tabular}
+  \end{center}
+  % \begin{center}
+  % \begin{tabular}{rr}\small
+  % {\bf Titles \& Short Abstracts Due:}      & January  13, 2014\\
+  % {\bf Full Papers  Due:}            & January 20, 2014\\
+  % {\bf Author Notification:}                & March 31, 2014\\
+  % {\bf Final Versions Due for Proceedings:} & May 15, 2014
+  % \end{tabular}
+  % \end{center}
+  %
+  Deadlines are firm; late submissions will not be possible.
+  %
+  All submissions are made electronically via the url
+  \textbf{\url{http://easychair.org/conferences/conf=csllics2014}}.
+
+  The results reported in submissions must be unpublished and not submitted for
+  publication elsewhere, including the proceedings of other symposia or workshops.
+  %
+  The program chairs must be informed in advance of submission of any closely
+  related work submitted or about to be submitted to a conference or journal.
+  %
+  Authors of accepted papers are expected to sign copyright release forms.
+  %
+  One author of each accepted paper is expected to present that paper at the conference.
+
+  \medskip
+
+%  \noindent%
+%  \textbf{Short Presentations:} %
+%  A session of short presentations, intended for descriptions of student
+%  research works in progress, and other brief communications, is planned.
+%  %
+%  These abstracts will not be published.
+%  %
+%  Dates and guidelines are posted on the conference web-site.
+%
+%  \smallskip
+
+  \noindent%
+  \textbf{Awards:} %
+  The \emph{Kleene Award for Best Student Paper} will be given for the best
+  student paper(s), as judged by the program committee.
+  %
+  The \emph{EACSL Outstanding Dissertation Award}, named for Wilhelm F.\
+  Ackermann,
+  and the \emph{LICS Test-of-Time Award 2014}
+  will be presented during the joint meeting.
+
+  \medskip
+
+%  \noindent%
+%  \textbf{Special Issue:} %
+%  Full versions of up to three accepted papers, to be selected by the program
+%  committee, will be invited for submission to the \emph{Journal of the ACM}.
+%  %
+%  Additional selected papers will be invited to a special issue of \emph{Logical
+%    Methods in Computer Science}.
+%
+%  \smallskip
+
+  \noindent%
+  \textbf{Sponsorship:} %
+  The joint meeting is sponsored by the European Association for Computer
+  Science Logic, the IEEE Technical Committee on Mathematical Foundations of
+  Computation, and by the ACM SIGACT in cooperation with the Association for
+  Symbolic Logic and the European Association for Theoretical Computer Science.
+  % %
+  % The Vienna Summer of Logic 2014 is organized by the Kurt G\"odel Society.
+
+ %  \emph{Additional space for names of various committee members if the PC is
+%    longer than 44 people, logos, etc.}
+\end{minipage}
+}
+
+%\bigskip
+\medskip
+
+ \noindent%
+\bgroup \small
+  \textbf{EACSL Executive Committee:}
+L. Beklemishev, M. Bezem, B. Courcelle, A. Dawar, Z. Esik, B. Loewe,
+J. Makowsky (president), D. Niwinski, L. Ong, T. Schwentick, H. Veith,
+G. Winskel
+%
+%  \noindent%
+\quad  \textbf{LICS Organizing Committee:}
+M. Abadi, L. Aceto, R. Alur, F. Baader, P. Beame, P. Bouyer-Decitre,
+A. Compagnoni, A. Dawar, N. Dershowitz, M. Escardó, M. Fernández,
+M. Grohe, O. Grumberg, J-P. Jouannaud, P. Kolaitis, O. Kupferman,
+B. Larose, V. Lipovac, M. Mislove, G. Moser, A. Murawski, L. Ong
+(chair), A. Scedrov, P. Scott, D. Shmoys, M. Valeriote
+\egroup
+
+\end{document}
+
+% Local Variables:
+% mode: latex
+% fill-column: 80
+% sort-fold-case: t
+% ispell-local-dictionary: "en_US"
+% End:
+
+%  LocalWords:  CSL EACSL LICS ACM IEEE Henzinger EPFL INRIA Givenname Vieille
+%  LocalWords:  Terre Georg Moser FLoC Helmut Veith VSL Baaz automata logics rl
+%  LocalWords:  computability combinatory bioinformatics symposia Kleene SIGACT
+%  LocalWords:  Ackermann odel
