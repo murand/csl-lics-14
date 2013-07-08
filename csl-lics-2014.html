@@ -28,7 +28,7 @@
       #navbar ul li { display: inline; list-style-type: none;
                       margin: 5px 10px; padding: 5px 5px; }
       #deadlines-table { width: 30em; margin: 5px 0; margin-left: 50px; }
-      #logobox { width: 50%; margin: 20px auto; }
+      #logobox { width: 100%; margin: 20px auto; }
       #logobox ul li { display: inline; list-style-type: none; margin: 10px 10px; }
     </style>
   </head>
@@ -160,36 +160,33 @@
 
         <h3>EACSL Executive Committee</h3>
         <p>
-          L. Beklemishev, M. Bezem, B. Courcelle, A. Dawar, Z. Esik,
-          B. Loewe, J. Makowsky (president), D. Niwinski, L. Ong, T.
-          Schwentick, H. Veith, G. Winskel
+          L. Beklemishev, M. Bezem, B. Courcelle, A. Dawar, Z. Esik, B. Loewe, J. Makowsky (president), D. Niwinski, L.
+          Ong, T. Schwentick, H. Veith, G. Winskel
         </p>
 
         <h3>LICS Organizing Committee</h3>
         <p>
-          M. Abadi, L. Aceto, R. Alur, F. Baader, P. Beame, P.
-          Bouyer-Decitre, A. Compagnoni, A. Dawar, N. Dershowitz, M.
-          Escardó, M. Fernández, M. Grohe, O. Grumberg, J-P.
-          Jouannaud, P. Kolaitis, O. Kupferman, B. Larose, V. Lipovac,
-          M. Mislove, G. Moser, A. Murawski, L. Ong (chair), A.
-          Scedrov, P. Scott, D. Shmoys, M. Valeriote
+          M. Abadi, L. Aceto, R. Alur, F. Baader, P. Beame, P. Bouyer-Decitre, K. Chatterjee, A. Compagnoni, A. Dawar,
+          N. Dershowitz, M. Fernández, M. Grohe, O. Grumberg, T. Henzinger, P. Kolaitis, O. Kupferman, B. Larose, V.
+          Lipovac, D. Miller, M. Mislove, G. Moser, A. Murawski, L. Ong (chair), A. Scedrov, D. Shmoys, M. Valeriote
         </p>
-      </section>
+      </section> <!-- #committees -->
 
       <section id="cfpmain">
         <div id="navbar">
           <ul>
-            <li><a href="#cfp">Call for Papers</a></li>
-            <li><a href="#">Affiliated Workshops</a></li>
-            <li><a href="#">Accepted Papers</a></li>
-            <li><a href="#">Program</a></li>
-            <li><a href="#">Local Organization</a></li>
+            <li><a href="#cfp-link">Call for Papers</a></li>
+            <!-- uncomment as needed -->
+            <!-- <li><a href="#">Affiliated Workshops</a></li> -->
+            <!-- <li><a href="#">Accepted Papers</a></li> -->
+            <!-- <li><a href="#">Program</a></li> -->
+            <!-- <li><a href="#">Local Organization</a></li> -->
           </ul>
         </div> <!-- navbar -->
 
         <p>
           CSL is the annual meeting of the <a href="http://eacsl.org">European Association for Computer Science
-          Logic</a> (EACSL)} intended for computer scientists whose research activities involve logic, as well as for
+          Logic</a> (EACSL) intended for computer scientists whose research activities involve logic, as well as for
           logicians working on issues significant for computer
           science.
         </p>
@@ -207,7 +204,7 @@
           beyond 2014.
         </p>
 
-        <h3 id="cfp">Call for Papers</h3>
+        <h3 id="cfp-link">Call for Papers</h3>
 
         <p>(Also available in <a href="cfp-csl-lics14.pdf">PDF</a>.)</p>
 
@@ -234,7 +231,7 @@
 
         <p>
           Authors are required to submit a paper title and a short abstract of about 100 words in advance of submitting
-          the full paper. Every full paper must be submitted in the {IEEE} Proceedings 2-column 10-point format and may
+          the full paper. Every full paper must be submitted in the IEEE Proceedings 2-column 10-point format and may
           not be longer than 10 pages, including references. (Use <a href="#">these LaTeX style files</a>.) The full
           paper must be in English and provide sufficient detail to allow the program committee to assess its merits.
           Full proofs may appear in a technical appendix which will be read at the reviewers' discretion. Authors are
@@ -306,23 +303,25 @@
         <h3 id="sponsors">Sponsorship</h3>
 
         <p>
-          The joint meeting is sponsored by the European Association for Computer Science Logic, the IEEE Technical
-          Committee on Mathematical Foundations of Computation, and by the ACM SIGACT in cooperation with the
-          Association for Symbolic Logic and the European Association for Theoretical Computer Science.
+          The joint meeting is sponsored by the <a href="http://eacsl.org">European Association for Computer Science
+          Logic</a>, the <a href="http://www.computer.org/portal/web/tcmf">IEEE Technical Committee on Mathematical
+          Foundations of Computation</a>, and by the <a href="http://www.sigact.org">ACM SIGACT</a> in cooperation with
+          the <a href="http://aslonline.org">Association for Symbolic Logic</a> and
+          the <a href="http://www.eatcs.org">European Association for Theoretical Computer Science</a>.
         </p>
 
         <div id="logobox">
           <ul>
-            <li><a href="http://www.computer.org/"><img width="150" src="./ieee-logo.png" alt="IEEE"></a></li>
+            <li><a href="http://www.acm.org/"><img width="150" src="./acm.jpg" alt="ACM"></a></li>
+            <li><a href="http://www.computer.org/"><img width="150" src="./ieee.jpg" alt="IEEE"></a></li>
             <li><a href="http://www.aslonline.org"><img width="150" src="./asl-logo.jpg" alt="ASL"></a></li>
-            <li><a href="http://www.eatcs.org"><img width="100" src="./eatcs.jpg" alt="EATCS"></a></li>
+            <li><a href="http://www.eatcs.org"><img width="80" src="./eatcs.jpg" alt="EATCS"></a></li>
           </ul>
-        </div> <!-- logobox -->
-      </section>
+        </div> <!-- #logobox -->
+      </section> <!-- #cfpmain -->
 
-      <footer class="clearboth">
-      </footer>
-    </div> <!-- wrapper -->
+      <footer class="clearboth"></footer>
+    </div> <!-- #wrapper -->
   </body>
 </html>
 
